@@ -1,0 +1,292 @@
+.pc-meta-layout {
+  .pc-content-area {
+    .pc-sys-modify {
+      .sys-modify {
+        .pc-sys-left {
+          margin: 73px 0 100px 211px;
+          width: 720px;
+          height: 100%;
+          padding: 27px 43px 365px;
+          flex-shrink: 0;
+          .account-title {
+            font-size: 27px;
+            font-family: Poppins-Medium, Poppins;
+            font-weight: 500;
+            color: #000000;
+            line-height: 40px;
+            position: relative;
+            padding-bottom: 32px;
+            // padding-left: 20px;
+          }
+          .app-header {
+            background: #f8fafb;
+            border-radius: 5px 5px 0 0;
+            padding: 32px 24px 33px 21px;
+            display: flex;
+            // align-items: center;
+            .app-desc {
+              margin-left: 21px;
+            }
+            .app-version {
+              margin: 1px 0 4px;
+              font-size: 19px;
+              font-family: Poppins-Regular, Poppins;
+              font-weight: 400;
+              color: #28293e;
+              line-height: 28px;
+            }
+            .app-header-more {
+              font-size: 16px;
+              font-family: Poppins-Regular, Poppins;
+              color: #89939f;
+              line-height: 27px;
+              position: relative;
+              // display: flex;
+              // p {
+              //   text-overflow: ellipsis;
+              //   display: -webkit-box;
+              //   text-overflow: ellipsis;
+              //   // white-space: nowrap;
+              //   overflow: hidden;
+              //   -webkit-box-orient: vertical;
+              //   -webkit-line-clamp: 2;
+              //   height: 54px;
+              //   margin: 0;
+              //   width: 100%;
+              // }
+              p {
+                display: block;
+                margin: 0;
+                position: relative;
+                line-height: 27px;
+                height: 54px;
+                overflow: hidden;
+                transition: all 0.3s ease;
+
+                &::after {
+                  content: '...';
+                  position: absolute;
+                  bottom: 0;
+                  right: 115px;
+                  // padding-left: 54px;
+                  background: -webkit-linear-gradient(
+                    left,
+                    transparent,
+                    #f8fafb 55%
+                  );
+                  background: -o-linear-gradient(
+                    right,
+                    transparent,
+                    #f8fafb 55%
+                  );
+                  background: -moz-linear-gradient(
+                    right,
+                    transparent,
+                    #f8fafb 55%
+                  );
+                  background: linear-gradient(
+                    to right,
+                    transparent,
+                    #f8fafb 55%
+                  );
+                }
+                &.active {
+                  height: 135px;
+
+                  &::after {
+                    display: none;
+                  }
+                }
+              }
+              .more {
+                color: #0095ff;
+                line-height: 19px;
+              }
+              .more-link {
+                display: block;
+                position: absolute;
+                right: 30px;
+                bottom: 0;
+                cursor: pointer;
+              }
+            }
+          }
+          .account-list {
+            // display: flex;
+            // flex-wrap: wrap;
+            // width: 100%;
+            padding: 43px 21px 50px;
+            background: #f8fafb;
+            overflow: hidden;
+            border-radius: 5px;
+            .account-list-item {
+              overflow: hidden;
+              margin-bottom: 27px;
+              cursor: pointer;
+              position: relative;
+
+              .account-custom {
+                display: block;
+                text-decoration: none;
+                font-size: 19px;
+                font-family: Poppins-Regular, Poppins;
+                font-weight: 400;
+                color: #111111;
+                line-height: 28px;
+                // overflow: hidden;
+                ::v-deep .el-switch {
+                  height: 29px;
+                  line-height: 29;
+                  .el-switch__core {
+                    width: 51px !important;
+                    height: 29px;
+                    border-radius: 20px;
+                    &::after {
+                      width: 25px;
+                      height: 25px;
+                    }
+                  }
+                  &.is-checked {
+                    .el-switch__core {
+                      &::after {
+                        margin-left: -25px;
+                      }
+                    }
+                  }
+                }
+              }
+              .m-collapse-title {
+                display: flex;
+                align-items: center;
+              }
+              .m-collapse-title_text {
+                min-width: 280px;
+                max-width: 300px;
+                flex: 1;
+              }
+              .account-item_title {
+                display: flex;
+                position: relative;
+              }
+              .account-item_money {
+                font-size: 21px;
+                font-weight: 500;
+                color: #ffffff;
+                line-height: 32px;
+              }
+              .account-item_content {
+                font-size: 19px;
+                font-family: Poppins-Regular, Poppins;
+                font-weight: 400;
+                color: #89939f;
+                line-height: 28px;
+                padding-left: 30px;
+                padding-right: 24px;
+                // min-width: 280px;
+                // max-width: 300px;
+                .m-collapse-title_url {
+                  min-width: 280px;
+                  max-width: 300px;
+                  text-overflow: ellipsis;
+                  display: block;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  -webkit-box-orient: vertical;
+                }
+                .account-card {
+                  width: 57px;
+                  height: 49px;
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+              .account-footer {
+                flex: 1;
+                text-align: right;
+                font-size: 24px;
+                color: #89939f;
+              }
+              .account-item_label {
+                color: #0c0c0c;
+                font-size: 21px;
+                font-weight: bold;
+                margin-top: 10px;
+              }
+              .account-item_date {
+                display: block;
+                margin-left: 32px;
+                font-size: 32px;
+                font-weight: 500;
+                color: #ffffff;
+                line-height: 37px;
+                letter-spacing: 3px;
+                text-shadow: 0px 3px 3px rgba(33, 38, 47, 0.5);
+              }
+              ::v-deep .el-button {
+                background: #ffffff;
+                border-radius: 20px;
+                line-height: 1;
+                height: 40px;
+                padding: 0 20px;
+                span {
+                  font-size: 21px;
+                  font-weight: 500;
+                  color: #ff4143;
+                  line-height: 25px;
+                  background: linear-gradient(225deg, #438cff 0%, #2865e7 100%);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+                &.el-button--primary {
+                  background: #ffffff;
+                }
+              }
+              &.disabled {
+                .account-item_label {
+                  color: #e0e0e0;
+                }
+                .account-item_date {
+                  color: #e0e0e0;
+                }
+                .nut-button {
+                  color: #e0e0e0;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+        .pc-sys-right {
+          flex-shrink: 0;
+          margin: 122px 227px 0 137px;
+          width: 561px;
+          height: 623px;
+          flex-shrink: 0;
+          box-shadow: none;
+          background: #fafbfd;
+        }
+        .pc-mail {
+          padding: 0;
+        }
+      }
+    }
+    .del-dialog {
+      font-size: 21px;
+      font-family: Poppins-Medium, Poppins;
+      font-weight: 500;
+      color: #89939f;
+      line-height: 32px;
+    }
+    .dialog-footer {
+      overflow: hidden;
+      .el-button {
+        display: inline-block;
+        font-size: 21px;
+        line-height: 1;
+        overflow: hidden;
+      }
+    }
+  }
+}

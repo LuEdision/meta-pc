@@ -1,0 +1,54 @@
+.sys-message {
+  margin: 209px 568px 100px 571px;
+  .message-wait {
+    text-align: center;
+  }
+}
+.message-wait-main {
+  text-align: center;
+  img {
+    width: 267px;
+  }
+  h2 {
+    font-size: 27px;
+    font-family: Poppins-Medium, Poppins;
+    font-weight: 500;
+    color: #000000;
+    line-height: 40px;
+    margin: 32px 0 19px;
+  }
+  p {
+    font-size: 21px;
+    font-family: Poppins-Medium, Poppins;
+    font-weight: 500;
+    color: #89939f;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 53px;
+  }
+}
+.message-wait-footer {
+  .btn {
+    width: 608px;
+    text-align: center;
+    margin: 0 auto;
+    .el-button {
+      width: 100%;
+      height: 64px;
+      font-size: 21px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 29px;
+      margin: 0;
+      &.is-plain {
+        background: #fff;
+        color: #438cff;
+        margin-top: 16px;
+        &.is-disabled {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

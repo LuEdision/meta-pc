@@ -1,0 +1,183 @@
+.pc-sys-home {
+  background-image: url('@/assets/img/pc/banner@2x.png');
+  background-repeat: no-repeat;
+  background-size: 100% 440px;
+  position: relative;
+  // display: flex;
+  flex: 1;
+  .home {
+    cursor: grab;
+    height: 1185px;
+  }
+  .invite-now {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    background: #ffffff;
+    top: -185px;
+    right: 60px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .pc-sys-left_noticebar {
+    padding: 43px 185px 0;
+    .notice-bar {
+      height: 43px !important;
+      line-height: 43px !important;
+      border-radius: 5px;
+    }
+  }
+  .pc-sys-left_status {
+    font-size: 27px;
+    font-family: Poppins-Regular, Poppins;
+    font-weight: 400;
+    color: #6a6e75;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 43px;
+  }
+  .pc-sys-left_money {
+    margin-top: 8px;
+    text-align: center;
+    .money {
+      font-size: 107px;
+      font-family: Roboto-Bold, Roboto;
+      font-weight: bold;
+      color: #000000;
+      line-height: 125px;
+    }
+    .money-symbol {
+      font-size: 43px;
+      font-family: Roboto-Medium, Roboto;
+      font-weight: 500;
+      color: #000000;
+      line-height: 51px;
+      margin-left: 13px;
+    }
+  }
+  .pc-sys-left_btn {
+    .loan-label {
+      text-align: center;
+      font-size: 19px;
+      font-family: Poppins-Regular, Poppins;
+      font-weight: 400;
+      color: #89939f;
+      line-height: 21px;
+      &._3002,
+      &._3003 {
+        color: #fd4844;
+      }
+    }
+  }
+  .step {
+    width: 56px;
+    height: 56px;
+    img {
+      width: 100%;
+    }
+  }
+  .m-mati {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
+  .animation {
+    animation: dot 1s ease infinite both;
+  }
+
+  @keyframes dot {
+    33% {
+      transform: scale(0.9);
+    }
+    66% {
+      transform: scale(1);
+    }
+  }
+}
+.sys-message {
+  display: flex;
+}
+.message-wait {
+  display: flex;
+}
+.message-wait-main {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 267px;
+  }
+  h2 {
+    font-size: 27px;
+    font-family: Poppins-Medium, Poppins;
+    font-weight: 500;
+    color: #000000;
+    line-height: 40px;
+    margin: 32px 0 19px;
+  }
+  p {
+    font-size: 21px;
+    font-family: Poppins-Medium, Poppins;
+    font-weight: 500;
+    color: #89939f;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 53px;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: normal;
+  }
+  .wait-down {
+    margin-bottom: 20px;
+  }
+}
+.message-wait-footer {
+  .btn {
+    width: 608px;
+    text-align: center;
+    margin: 0 auto;
+    .el-button {
+      width: 100%;
+      height: 64px;
+      font-size: 21px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 29px;
+    }
+  }
+}
+
+.cust-cd-timer {
+  font-size: 40px;
+  font-family: Poppins-Medium, Poppins;
+  font-weight: 600;
+  color: #438cff;
+  line-height: 32px;
+  gap: 5px;
+}
+
+.countdown-part-box {
+  display: flex;
+  align-items: center;
+
+  .part-item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .part-item-symbol {
+    margin: 0 5px;
+  }
+}
+.mescroll {
+  position: fixed;
+  top: 44px;
+  bottom: 0;
+  height: auto; /*如设置bottom:50px,则需height:auto才能生效*/
+}

@@ -1,0 +1,75 @@
+.pc-meta-layout {
+  .pc-content-area {
+    .pc-sys-modify {
+      .sys-modify {
+        .pc-sys-left {
+          margin: 73px 0 136px 211px;
+          width: 100%;
+          height: 100%;
+          padding: 27px 88px;
+          .bank-bind {
+            .bank-bind-title {
+              font-size: 24px;
+              font-weight: 500;
+              color: #000000;
+              line-height: 36px;
+            }
+            .bank-bind-label {
+              font-size: 21px;
+              font-weight: 500;
+              color: #89939f;
+              line-height: 33px;
+            }
+            .bank-bind-form {
+              .el-input {
+                font-size: 21px;
+                font-weight: 500;
+                color: #6a6e75;
+                line-height: 33px;
+              }
+              .el-autocomplete {
+                display: block;
+              }
+              .el-input-group__prepend {
+                font-size: 21px;
+                font-weight: 500;
+                color: #6a6e75;
+                line-height: 33px;
+                background-color: #ffffff;
+              }
+            }
+            .bank-bind-desc {
+              font-size: 19px;
+              font-weight: 400;
+              color: #6a6e75;
+              line-height: 29px;
+            }
+            .bank-bind-btn {
+              margin-top: 80px;
+              margin-bottom: 277px;
+              .el-button {
+                width: 100%;
+                height: 64px;
+                font-size: 21px;
+                font-weight: 600;
+                color: #ffffff;
+                line-height: 29px;
+              }
+            }
+          }
+        }
+        .pc-sys-right {
+          margin: 192px 227px 0 137px;
+          width: 561px;
+          height: 623px;
+          flex-shrink: 0;
+          box-shadow: none;
+          background: #fafbfd;
+        }
+        .pc-mail {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

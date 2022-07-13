@@ -1,0 +1,69 @@
+.sys-loan {
+  height: 100%;
+}
+.el-dialog {
+  border-radius: 4px;
+  &.setting-dialog {
+    .el-dialog__header {
+      background: #f8f8f8;
+      border-radius: 4px 4px 0 0;
+      padding-left: 37px;
+    }
+    .setting-dialog-title {
+      font-size: 28px;
+      font-family: Poppins-Medium, Poppins;
+      font-weight: 500;
+      color: #28293e;
+      line-height: 42px;
+      background: #f8f8f8;
+      .dialog-title-content {
+        font-size: 12px;
+        font-family: Poppins-Regular, Poppins;
+        font-weight: 400;
+        color: #89939f;
+        line-height: 18px;
+      }
+    }
+    .setting-dialog-content {
+      font-size: 12px;
+      font-family: Poppins-Regular, Poppins;
+      font-weight: 400;
+      color: #89939f;
+      line-height: 18px;
+    }
+    .el-dialog__body {
+      padding: 30px 37px 37px;
+      background: #f8f8f8;
+      min-height: 480px;
+      max-height: 500px;
+      overflow: auto;
+    }
+    .el-dialog__footer {
+      text-align: center;
+      padding: 40px 20px 36px;
+      .el-button {
+        width: 174px;
+        height: 42px;
+        font-size: 19px;
+        font-family: Poppins-Regular, Poppins;
+        font-weight: 400;
+        color: #6a6e75;
+        line-height: 1;
+        border-radius: 5px;
+        width: 547px;
+        height: 56px;
+        &.is-disabled {
+          background: #c9c9c9;
+          border: 0.01rem solid #c9c9c9;
+          color: #ffffff;
+        }
+      }
+      .el-button--primary {
+        font-family: Poppins-SemiBold, Poppins;
+        font-weight: 600;
+        color: #ffffff;
+        background: linear-gradient(136deg, #438cff 0%, #2865e7 100%);
+      }
+    }
+  }
+}

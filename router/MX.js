@@ -1,0 +1,150 @@
+module.exports = (resolve) => [
+  {
+    path: '/',
+    name: 'Index',
+    component: resolve('index.vue'),
+    redirect: '/home',
+    children: [
+      {
+        path: 'home',
+        name: 'Home',
+        component: resolve('home/index.vue'),
+        meta: {
+          title:
+            'Préstamos instantáneos y rápidos en cualquier momento en cualquier lugar',
+        },
+      },
+      {
+        path: 'privacy-policy',
+        name: 'privacyPolicy',
+        component: resolve('privacy-policy/index.vue'),
+        meta: {
+          title: 'Aviso De Privacidad',
+        },
+      },
+      {
+        path: 'cookie-policy',
+        name: 'cookiePolicy',
+        component: resolve('cookie-policy/index.vue'),
+        meta: {
+          title: 'POLÍTICA DE COOKIES',
+        },
+      },
+      {
+        path: 'secci',
+        name: 'Secci',
+        component: resolve('secci/index.vue'),
+        meta: {
+          title: 'INFORMACIÓN NORMALIZADA EUROPEA CRÉDITO AL CONSUMO',
+        },
+      },
+      {
+        path: 'agreement',
+        name: 'Agreement',
+        component: resolve('agreement/index.vue'),
+        meta: {
+          title: 'Modelo de contrato de préstamo',
+        },
+      },
+      {
+        path: 'terms-of-use',
+        name: 'termsOfUse',
+        component: resolve('terms-of-use/index.vue'),
+        meta: {
+          title: 'Términos de Uso',
+        },
+      },
+      {
+        path: 'about-us',
+        name: 'AboutUs',
+        component: resolve('about-us/index.vue'),
+        meta: {
+          title: 'Sobre nosotros',
+        },
+      },
+      {
+        path: 'faq',
+        name: 'Faq',
+        component: resolve('faq/index.vue'),
+        meta: {
+          title: 'Preguntas frecuentes',
+        },
+      },
+      {
+        path: 'post/:name',
+        name: 'postDatail',
+        component: resolve('post/index.vue'),
+      },
+      {
+        path: 'mobile/home',
+        name: 'H5Home',
+        component: resolve('mobile/home/index.vue'),
+        meta: {
+          title:
+            'Préstamos instantáneos y rápidos en cualquier momento en cualquier lugar',
+        },
+      },
+      {
+        path: 'mobile/privacy-policy',
+        name: 'H5privacyPolicy',
+        component: resolve('mobile/privacy-policy/index.vue'),
+        meta: {
+          title: 'Aviso De Privacidad',
+        },
+      },
+      {
+        path: 'mobile/cookie-policy',
+        name: 'h5CookiePolicy',
+        component: resolve('mobile/cookie-policy/index.vue'),
+        meta: {
+          title: 'POLÍTICA DE COOKIES',
+        },
+      },
+      {
+        path: 'mobile/secci',
+        name: 'h5Secci',
+        component: resolve('mobile/secci/index.vue'),
+        meta: {
+          title: 'INFORMACIÓN NORMALIZADA EUROPEA CRÉDITO AL CONSUMO',
+        },
+      },
+      {
+        path: 'mobile/agreement',
+        name: 'H5Agreement',
+        component: resolve('mobile/agreement/index.vue'),
+        meta: {
+          title: 'Modelo de contrato de préstamo',
+        },
+      },
+      {
+        path: 'mobile/terms-of-use',
+        name: 'H5termsOfUse',
+        component: resolve('mobile/terms-of-use/index.vue'),
+        meta: {
+          title: 'Términos de Uso',
+        },
+      },
+      {
+        path: 'mobile/about-us',
+        name: 'H5AboutUs',
+        component: resolve('mobile/about-us/index.vue'),
+        meta: {
+          title: 'Sobre nosotros',
+        },
+      },
+      {
+        path: 'mobile/faq',
+        name: 'H5Faq',
+        component: resolve('mobile/faq/index.vue'),
+        meta: {
+          title: 'Preguntas frecuentes',
+        },
+      },
+      {
+        path: 'mobile/post/:name',
+        name: 'H5postDatail',
+        component: resolve('mobile/post/index.vue'),
+      },
+    ],
+  },
+];

@@ -1,0 +1,148 @@
+.pc-meta-layout {
+  .pc-content-area {
+    .pc-sys-modify {
+      .sys-modify {
+        .pc-sys-left {
+          margin: 73px 136px 100px;
+          width: 100%;
+          height: 100%;
+          padding: 27px 43px;
+          .coupon-unusable {
+            padding: 80px 0 144px 0;
+          }
+          .coupon-title {
+            font-size: 27px;
+            font-weight: 500;
+            color: #000000;
+            line-height: 40px;
+            position: relative;
+            padding-left: 20px;
+            &::before {
+              display: block;
+              position: absolute;
+              content: ' ';
+              height: 100%;
+              width: 4px;
+              background: linear-gradient(225deg, #438cff 0%, #2865e7 100%);
+              border-radius: 2px;
+              left: 0;
+            }
+          }
+          .coupon-tips {
+            padding: 32px 0;
+            color: #999999;
+            font-size: 21px;
+            font-weight: 500;
+            color: #89939f;
+            line-height: 33px;
+          }
+          .coupon-list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            // gap: 53px;
+            .coupon-list-item {
+              width: calc((100% - 106px) / 3);
+              //   align-items: center;
+              // justify-content: center;
+              margin-right: 53px;
+              background: #ffffff;
+              box-shadow: 0px 7px 20px 0px rgba(201, 201, 201, 0.3);
+              border-radius: 11px;
+              //   flex: 0 0 calc(calc(100% / 3) - 53px);
+              &:nth-child(3n) {
+                margin-right: 0;
+              }
+              &:nth-child(n + 4) {
+                margin-top: 53px;
+              }
+              .coupon-custom {
+                display: flex;
+                align-items: center;
+                height: 150px;
+              }
+              .coupon-item_title {
+                height: 150px;
+                position: relative;
+              }
+              .coupon-item_money {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                z-index: 1;
+                font-size: 42px;
+                font-weight: bold;
+                color: #ffffff;
+                line-height: 49px;
+                span {
+                  font-size: 19px;
+                }
+              }
+              .nut-icon {
+                width: auto;
+                height: 100%;
+              }
+              .coupon-item_content {
+                height: 100%;
+                margin-left: 18px;
+                overflow: hidden;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: flex-start;
+                // justify-content: space-between;
+                position: relative;
+                flex: 1;
+              }
+              .coupon-item_label {
+                color: #0c0c0c;
+                font-size: 21px;
+                font-weight: bold;
+                margin-top: 10px;
+              }
+              .coupon-item_date {
+                display: block;
+                margin-top: 8px;
+                margin-bottom: 11px;
+                font-size: 16px;
+                color: #999999;
+                font-weight: 400;
+              }
+              .el-button {
+                //   float: right;
+                // margin-top: 8px;
+                height: 35px;
+                // align-self: flex-end;
+                font-size: 21px;
+                font-weight: 400;
+                line-height: 25px;
+                padding: 0 15px;
+                margin-right: 21px;
+                border-radius: 4px;
+                margin-bottom: 10px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                &.el-button--primary {
+                  background: #ffffff;
+                }
+              }
+              &.disabled {
+                .coupon-item_label {
+                  color: #e0e0e0;
+                }
+                .coupon-item_date {
+                  color: #e0e0e0;
+                }
+                .nut-button {
+                  color: #e0e0e0;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,520 @@
+module.exports = (resolve) => [
+  {
+    path: '/',
+    name: 'Index',
+    component: resolve('index.vue'),
+    redirect: '/home',
+    children: [
+      {
+        path: 'home',
+        name: 'Home',
+        component: resolve('home/es.vue'),
+        meta: {
+          title: '',
+        },
+      },
+      {
+        path: 'privacy-policy',
+        name: 'privacyPolicy',
+        component: resolve('privacy-policy/index.vue'),
+        meta: {
+          title: 'Aviso De Privacidad',
+        },
+      },
+      {
+        path: 'cookie-policy',
+        name: 'cookiePolicy',
+        component: resolve('cookie-policy/index.vue'),
+        meta: {
+          title: 'POLÍTICA DE COOKIES',
+        },
+      },
+      {
+        path: 'secci',
+        name: 'Secci',
+        component: resolve('secci/index.vue'),
+        meta: {
+          title: 'INFORMACIÓN NORMALIZADA EUROPEA CRÉDITO AL CONSUMO',
+        },
+      },
+      {
+        path: 'agreement',
+        name: 'Agreement',
+        component: resolve('agreement/index.vue'),
+        meta: {
+          title: 'Modelo de contrato de préstamo',
+        },
+      },
+      {
+        path: 'terms-of-use',
+        name: 'termsOfUse',
+        component: resolve('terms-of-use/index.vue'),
+        meta: {
+          title: 'Términos de Uso',
+        },
+      },
+      {
+        path: 'about-us',
+        name: 'AboutUs',
+        component: resolve('about-us/index.vue'),
+        meta: {
+          title: 'Sobre nosotros',
+        },
+      },
+      {
+        path: 'contact-us',
+        name: 'contact',
+        component: resolve('contact-us/index.vue'),
+        meta: {
+          title: 'Contacto',
+        },
+      },
+      {
+        path: 'faq',
+        name: 'Faq',
+        component: resolve('faq/index.vue'),
+        meta: {
+          title: 'Preguntas frecuentes',
+        },
+      },
+      {
+        path: 'post/:name',
+        name: 'postDatail',
+        component: resolve('post/index.vue'),
+      },
+      {
+        path: 'mobile',
+        name: 'H5',
+        redirect: 'mobile/home',
+      },
+      {
+        path: 'mobile/home',
+        name: 'H5Home',
+        component: resolve('mobile/home/es.vue'),
+        meta: {
+          title: '',
+        },
+      },
+      {
+        path: 'mobile/privacy-policy',
+        name: 'H5privacyPolicy',
+        component: resolve('mobile/privacy-policy/index.vue'),
+        meta: {
+          title: 'Aviso De Privacidad',
+        },
+      },
+      {
+        path: 'mobile/cookie-policy',
+        name: 'h5CookiePolicy',
+        component: resolve('mobile/cookie-policy/index.vue'),
+        meta: {
+          title: 'POLÍTICA DE COOKIES',
+        },
+      },
+      {
+        path: 'mobile/secci',
+        name: 'h5Secci',
+        component: resolve('mobile/secci/index.vue'),
+        meta: {
+          title: 'INFORMACIÓN NORMALIZADA EUROPEA CRÉDITO AL CONSUMO',
+        },
+      },
+      {
+        path: 'mobile/agreement',
+        name: 'H5Agreement',
+        component: resolve('mobile/agreement/index.vue'),
+        meta: {
+          title: 'Modelo de contrato de préstamo',
+        },
+      },
+      {
+        path: 'mobile/terms-of-use',
+        name: 'H5termsOfUse',
+        component: resolve('mobile/terms-of-use/index.vue'),
+        meta: {
+          title: 'Términos de Uso',
+        },
+      },
+      {
+        path: 'mobile/about-us',
+        name: 'H5AboutUs',
+        component: resolve('mobile/about-us/index.vue'),
+        meta: {
+          title: 'Sobre nosotros',
+        },
+      },
+      {
+        path: 'mobile/contact-us',
+        name: 'H5Contact',
+        component: resolve('mobile/contact-us/index.vue'),
+        meta: {
+          title: 'Contacto',
+        },
+      },
+      {
+        path: 'mobile/faq',
+        name: 'H5Faq',
+        component: resolve('mobile/faq/index.vue'),
+        meta: {
+          title: 'Preguntas frecuentes',
+        },
+      },
+      {
+        path: 'mobile/post/:name',
+        name: 'H5postDatail',
+        component: resolve('mobile/post/index.vue'),
+      },
+      {
+        path: 'pc',
+        name: 'PCWeb',
+        redirect: 'pc/outside',
+      },
+      // {
+      //   path: 'pc/sys',
+      //   name: 'Home',
+      //   component:resolve('pc-loan/system/index.vue'),
+      //   redirect: 'pc/sys/index',
+      //   children: [
+      //     {
+      //       path: 'index',
+      //       name: 'SysIndex',
+      //       component:resolve('pc-loan/system/home/index.vue'),
+      //       meta: {
+      //         title: '',
+      //         hideBack: true,
+      //       },
+      //     },
+      //     {
+      //       path: 'user',
+      //       name: 'SysUser',
+      //       component:resolve('pc-loan/system/user/index.vue'),
+      //       children: [
+      //         {
+      //           path: 'my',
+      //           name: 'UserMy',
+      //           component:resolve('pc-loan/system/user/my/index.vue'),
+      //           meta: {
+      //             title: 'Mi perfil',
+      //           },
+      //         },
+      //         {
+      //           path: 'info',
+      //           name: 'UserInfo',
+      //           component:resolve('pc-loan/system/user/info/index.vue'),
+      //           meta: {
+      //             title: 'Revisar el perfil de solicitud',
+      //           },
+      //         },
+      //         {
+      //           path: 'modify',
+      //           name: 'UserModify',
+      //           component:resolve('pc-loan/system/user/modify/index.vue'),
+      //           meta: {
+      //             title: 'Solicitud de préstamos',
+      //             customEvent:{
+      //               return new Promise((resolve, reject) => {
+      //                 Dialog({
+      //                   title: 'Proceso sencillo para tu préstamo',
+      //                   content: `<div class="user-modify"><img src=${yesImg} />Hasta <span>1.000 €</span></div>
+      //                     <div class="user-modify"><img src=${yesImg} />Solicitud de <span>3 minutos</span></div>
+      //                     <div class="user-modify"><img src=${yesImg} />Depósito en <span>3 minutos</span></div>
+      //                     <div class="user-modify"><img src=${yesImg} /><span>Tasa de</span> interés baja</div>`,
+      //                   cancelText: Lang.leave,
+      //                   okText: Lang.continues,
+      //                   textAlign: 'left',
+      //                   onOk:{
+      //                     resolve(true);
+      //                   },
+      //                   onCancel:{
+      //                     reject(false);
+      //                   },
+      //                 });
+      //               });
+      //             },
+      //           },
+      //         },
+      //         {
+      //           path: 'coupon',
+      //           name: 'Coupon',
+      //           component:resolve('pc-loan/system/user/coupon/Index.vue'),
+      //           meta: {
+      //             title: 'Coupons',
+      //           },
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       path: 'bank',
+      //       name: 'SysBank',
+      //       component:resolve('pc-loan/system/bank/index.vue'),
+      //       children: [
+      //         {
+      //           path: 'preview',
+      //           name: 'SysBankPre',
+      //           component:
+      //             resolve('pc-loan/system/bank/preview/index.vue'),
+      //           meta: {
+      //             title: 'Identificación',
+      //           },
+      //         },
+      //         {
+      //           path: 'thirdParty',
+      //           name: 'SysThirdParty',
+      //           component:
+      //             resolve('pc-loan/system/bank/preview/ThirdParty.vue'),
+      //           meta: {
+      //             title: 'Identificación',
+      //             customEvent: 'thirdParty',
+      //           },
+      //         },
+      //         {
+      //           path: 'bind', // 绑定账户
+      //           name: 'SysBankBind',
+      //           component:resolve('pc-loan/system/bank/bind/index.vue'),
+      //           meta: {
+      //             title: 'Cuenta bancaria',
+      //           },
+      //         },
+      //         {
+      //           path: 'account',
+      //           name: 'SysBankAccount',
+      //           component:
+      //             resolve('pc-loan/system/bank/account/index.vue'),
+      //           meta: {
+      //             title: 'Mi cuenta bancaria',
+      //           },
+      //         },
+      //         // {
+      //         //   path: 'mati',
+      //         //   name: 'SysBankMati',
+      //         //   component:resolve('pc-loan/system/bank/mati/index.vue'),
+      //         //   meta: {
+      //         //     title: 'verificación Mati',
+      //         //   },
+      //         // },
+      //       ],
+      //     },
+      //     {
+      //       path: 'log',
+      //       name: 'SysLog',
+      //       component:resolve('pc-loan/system/log/index.vue'),
+      //       children: [
+      //         {
+      //           path: 'loan',
+      //           name: 'SysLogLoan',
+      //           component:resolve('pc-loan/system/log/loan/index.vue'),
+      //           meta: {
+      //             title: 'Historial de préstamo',
+      //           },
+      //         },
+      //         {
+      //           path: 'transaction',
+      //           name: 'SysLogTransaction',
+      //           component:
+      //             resolve('pc-loan/system/log/transaction/index.vue'),
+      //           meta: {
+      //             title: 'Movimiento',
+      //           },
+      //         },
+      //         {
+      //           path: 'detail',
+      //           name: 'SysLogDetail',
+      //           component:resolve('pc-loan/system/log/detail/index.vue'),
+      //           meta: {
+      //             title: 'Detalles',
+      //           },
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       path: 'loan',
+      //       name: 'SysLoan',
+      //       component:resolve('pc-loan/system/loan/index.vue'),
+      //       children: [
+      //         {
+      //           path: 'sure',
+      //           name: 'SysLoanSure',
+      //           component:resolve('pc-loan/system/loan/sure/index.vue'),
+      //           meta: {
+      //             title: 'Resultado de crédito',
+      //           },
+      //         },
+      //         {
+      //           path: 'repay',
+      //           name: 'SysLoanRepay',
+      //           component:resolve('pc-loan/system/loan/repay/index.vue'),
+      //           meta: {
+      //             title: 'Pagar mi préstamo',
+      //           },
+      //         },
+      //         {
+      //           path: 'repay-method',
+      //           name: 'SysLoanRepayMethod',
+      //           component:
+      //             resolve('pc-loan/system/loan/repay-method/index.vue'),
+      //           meta: {
+      //             title: 'Métodos de pago',
+      //           },
+      //         },
+      //         {
+      //           path: 'wait60',
+      //           name: 'SysLoanWait60',
+      //           component:
+      //             resolve('pc-loan/system/loan/wait-60/index.vue'),
+      //           meta: {
+      //             title: 'Account Cancellation',
+      //           },
+      //         },
+      //         {
+      //           path: 'precredit',
+      //           name: 'SysLoanPrecredit',
+      //           component:
+      //             resolve('pc-loan/system/loan/pre-credit/index.vue'),
+      //           meta: {
+      //             title: 'Resultados de la auditoria',
+      //           },
+      //         },
+      //         {
+      //           path: 'presale',
+      //           name: 'SysLoanPresale',
+      //           component:
+      //             resolve('pc-loan/system/loan/pre-sale/index.vue'),
+      //           meta: {
+      //             title: 'Resultado de crédito',
+      //           },
+      //         },
+      //         {
+      //           path: 'agreement',
+      //           name: 'Agreement',
+      //           component:
+      //             resolve('pc-loan/system/loan/agreement/Index.vue'),
+      //           meta: {
+      //             title: 'Loan Agreement',
+      //           },
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       path: 'message',
+      //       name: 'SysMessage',
+      //       component:resolve('pc-loan/system/message/index.vue'),
+      //       children: [
+      //         {
+      //           path: 'wait-apply', // 信审结果页
+      //           name: 'SysMessageWaitApply',
+      //           component:
+      //             resolve('pc-loan/system/message/wait-apply/index.vue'),
+      //           meta: {
+      //             title: 'Resultados de la auditoria',
+      //           },
+      //         },
+      //         {
+      //           path: 'wait-pay', // 还款处理中
+      //           name: 'SysMessageWaitPay',
+      //           component:
+      //             resolve('pc-loan/system/message/wait-pay/index.vue'),
+      //           meta: {
+      //             title: 'Pagar mi préstamo',
+      //           },
+      //         },
+      //         {
+      //           path: 'about-app',
+      //           name: 'SysMessageAboutApp',
+      //           component:
+      //             resolve('pc-loan/system/message/about-app/index.vue'),
+      //           meta: {
+      //             title: 'Acerca de nosotros',
+      //           },
+      //         },
+      //         {
+      //           path: 'config',
+      //           name: 'SysMessageConfig',
+      //           component:
+      //             resolve('pc-loan/system/message/config/index.vue'),
+      //           meta: {
+      //             title: 'Configuración',
+      //           },
+      //         },
+      //         {
+      //           path: 'subscribe',
+      //           name: 'SysMessageSubscribe',
+      //           component:
+      //             resolve('pc-loan/system/message/subscribe/index.vue'),
+      //           meta: {
+      //             title: 'Suscripción',
+      //           },
+      //         },
+      //         {
+      //           path: 'wait-credit',
+      //           name: 'SysMessagePrecredit',
+      //           component:
+      //             resolve('pc-loan/system/message/wait-precredit/index.vue'),
+      //           meta: {
+      //             title: 'Resultados de la auditoria',
+      //           },
+      //         },
+      //         {
+      //           path: 'delete-user',
+      //           name: 'SysMessageDeleteUser',
+      //           component:
+      //             resolve('pc-loan/system/message/delete-user/index.vue'),
+      //           meta: {
+      //             title: 'Verificación de identidad',
+      //           },
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
+      {
+        path: 'pc/outside',
+        name: 'Outside',
+        component: resolve('pc-loan/outside/index.vue'),
+        redirect: 'pc/outside/next',
+        children: [
+          {
+            path: 'next',
+            name: 'OutsideNext',
+            component: resolve('pc-loan/outside/next/index.vue'),
+          },
+          {
+            path: 'login', // 账号密码登录
+            name: 'OutsideLogin',
+            component: resolve('pc-loan/outside/login/index.vue'),
+          },
+          {
+            path: 'login2', // 短信验证码登录
+            name: 'OutsideLogin2',
+            component: resolve('pc-loan/outside/login2/index.vue'),
+          },
+          {
+            path: 'sms', // 注册页短信验证码提前校验
+            name: 'OutsideSms',
+            component: resolve('pc-loan/outside/sms/index.vue'),
+            meta: {
+              title: '',
+            },
+          },
+          {
+            path: 'register',
+            name: 'OutsideRegister',
+            component: resolve('pc-loan/outside/register/index.vue'),
+          },
+          {
+            path: 'forget',
+            name: 'OutsideForget',
+            component: resolve('pc-loan/outside/forget/index.vue'),
+          },
+        ],
+      },
+      // {
+      //   path: 'pc/outside/invite',
+      //   name: 'OutsideInvite',
+      //   component:resolve('pc-loan/outside/invite/index.vue'),
+      //   meta: {
+      //     title: 'invitar a amigos',
+      //   },
+      // },
+    ],
+  },
+];

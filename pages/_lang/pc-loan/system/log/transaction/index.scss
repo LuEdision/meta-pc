@@ -1,0 +1,181 @@
+.pc-meta-layout {
+  .pc-content-area {
+    .pc-sys-modify {
+      .sys-modify {
+        .pc-sys-left {
+          margin: 73px 136px 100px;
+          width: 100%;
+          height: 100%;
+          padding: 27px 43px;
+          background: #fafbfd;
+          box-shadow: none;
+          .loading {
+            text-align: center;
+            font-size: 16px;
+            font-family: Roboto-Bold, Roboto;
+            font-weight: bold;
+            color: #b0bac9;
+            line-height: 19px;
+            letter-spacing: 1px;
+            display: block;
+            position: relative;
+            &::before {
+              display: block;
+              content: ' ';
+              position: absolute;
+              left: 0;
+              right: 56%;
+              top: 50%;
+              transform: translateY(-50%);
+              height: 1px;
+              // width: 100%;
+              background: #d8dfed;
+            }
+            &::after {
+              display: block;
+              content: ' ';
+              position: absolute;
+              right: 0;
+              left: 56%;
+              top: 50%;
+              transform: translateY(-50%);
+              height: 1px;
+              // width: 100%;
+              background: #d8dfed;
+            }
+          }
+          ::v-deep .el-table {
+            .el-table__header-wrapper {
+              tr {
+                background-color: #fafbfd;
+              }
+            }
+            &::before {
+              height: 0;
+            }
+            .el-table__empty-block {
+              font-size: 30px;
+            }
+            .el-table__body-wrapper {
+              background-color: #fafbfd;
+              .el-table__body {
+                border-collapse: separate;
+                border-spacing: 0 13px; //控制间距
+              }
+            }
+            .cell {
+              padding: 0 0 0 20px;
+              font-size: 21px;
+              font-family: Poppins-Regular, Poppins;
+              font-weight: 400;
+              color: #2e384d;
+              line-height: 29px;
+              .money {
+                font-size: 21px;
+                font-family: Poppins-Medium, Poppins;
+                font-weight: 600;
+                color: #28293e;
+                line-height: 33px;
+              }
+              .btn {
+                text-align: center;
+              }
+              .el-button {
+                font-size: 20px;
+                font-family: Poppins-Medium, Poppins;
+                font-weight: 500;
+                color: #438cff;
+                line-height: 28px;
+              }
+              .S {
+                color: #00aa66;
+              }
+              .F {
+                color: #ef3c34;
+              }
+              .P {
+                color: #ffa700;
+              }
+              .timeout,
+              ._3002,
+              ._-1,
+              ._-2 {
+                color: #ef3c34;
+              }
+              .normal,
+              ._4001,
+              ._2002 {
+                color: #00aa66;
+              }
+              .title {
+                color: #111;
+              }
+              .once {
+                color: #ffa700;
+              }
+              ._1001,
+              ._1004,
+              ._0 {
+                color: #848484;
+              }
+              ._loan {
+                color: #ffa700;
+              }
+            }
+            td {
+              &.el-table__cell {
+                border-bottom: 1px solid rgba(46, 91, 255, 0.08);
+                border-top: 1px solid rgba(46, 91, 255, 0.08);
+                &:first-child {
+                  border-left: 1px solid rgba(46, 91, 255, 0.08);
+                }
+                &:last-child {
+                  border-right: 1px solid rgba(46, 91, 255, 0.08);
+                }
+              }
+            }
+            th {
+              &.el-table__cell {
+                background-color: #fafbfd;
+                &.is-leaf {
+                  border-bottom: none;
+                }
+                & > .cell {
+                  font-size: 16px;
+                  font-family: Poppins-Regular, Poppins;
+                  font-weight: 400;
+                  color: #89939f;
+                  line-height: 24px;
+                  letter-spacing: 1px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .loan-condition {
+        position: absolute;
+        top: 100px;
+        z-index: 100;
+        right: 211px;
+        .loan-condition-inline {
+          ::v-deep .el-form-item__label {
+            font-size: 19px;
+            font-family: Poppins-Regular, Poppins;
+            font-weight: 400;
+            color: #999999;
+            line-height: 28px;
+            vertical-align: middle;
+          }
+          ::v-deep .el-form-item__content {
+            vertical-align: middle;
+          }
+          ::v-deep .el-input__inner {
+            height: 40px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}

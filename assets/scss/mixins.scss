@@ -1,0 +1,29 @@
+@mixin set-navbar-height($height: 58px) {
+  height: $height;
+}
+
+@mixin set-line-height($height: 58px) {
+  line-height: $height;
+}
+
+@mixin set-font-size($size: 14px, $weight: 400) {
+  font: {
+    size: $size;
+    weight: $weight;
+    family: 'Poppins Bold', Poppins-Medium, Poppins-Regular, Poppins,
+      DINPro-Bold, DINPro, 'Poppins Italic', 'Roboto Medium', 'Roboto Regular',
+      'Nexa Bold', 'Poppins SemiBold', PingFang SC Semibold, PingFangSC-Semibold,
+      PingFang SC, sans-serif;
+  }
+}
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

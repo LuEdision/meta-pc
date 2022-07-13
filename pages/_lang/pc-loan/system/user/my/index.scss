@@ -1,0 +1,168 @@
+.pc-meta-layout {
+  .pc-content-area {
+    .pc-sys-home {
+      background-image: url('@/assets/img/myinfo/bg@2x.png');
+      background-repeat: no-repeat;
+      background-size: 100% 427px;
+      position: relative;
+      // display: flex;
+      flex: 1;
+      .my-user-info {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        margin: 127px 0 0 208px;
+        .my-user-info_avatar {
+          width: 149px;
+          height: 149px;
+          margin-right: 20px;
+          cursor: pointer;
+          img {
+            width: 100%;
+          }
+        }
+        .user-name {
+          font-size: 27px;
+          font-weight: 400;
+          color: rgba(17, 17, 17, 0.87);
+          line-height: 40px;
+          margin-bottom: 19px;
+        }
+        .user-phone {
+          font-size: 19px;
+          font-weight: 400;
+          color: #89939f;
+          line-height: 28px;
+          span {
+            display: inline-block;
+            vertical-align: middle;
+            &:last-child {
+              width: 32px;
+              height: 32px;
+              cursor: pointer;
+            }
+          }
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .home {
+        height: 1185px;
+        .my {
+          height: 597px;
+          margin-top: 459px;
+          width: auto;
+          padding: 56px 21px 0 21px;
+          li {
+            display: block;
+            padding-bottom: 48px;
+            font-size: 19px;
+            font-weight: 400;
+            color: #5c5c5c;
+            cursor: pointer;
+            line-height: 28px;
+            white-space: nowrap;
+            img {
+              width: 27px;
+              height: 27px;
+              vertical-align: middle;
+              margin-right: 16px;
+            }
+            a {
+              text-decoration: none;
+              color: #5c5c5c;
+            }
+            span {
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      .pc-sys-right {
+        height: 356px;
+        margin-top: 459px;
+        margin-right: 80px;
+        width: auto;
+        background: #fafbfd;
+        box-shadow: none;
+        .right-first,
+        .right-second {
+          display: flex;
+          align-items: center;
+        }
+        .right-first {
+          margin-bottom: 32px;
+        }
+        .right {
+          cursor: pointer;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          padding: 0 0 0 43px;
+          width: 557px;
+          background: #ffffff;
+          box-shadow: 0 13px 27px 0 rgb(188 208 232 / 30%);
+          border-radius: 11px;
+          height: 227px;
+        }
+        .right-date {
+          margin-right: 24px;
+        }
+        .right-my-icon {
+          width: 67px;
+          height: 67px;
+          img {
+            width: 100%;
+          }
+        }
+        .right-desc {
+          margin-left: 27px;
+          .right-desc_title {
+            font-size: 43px;
+            font-weight: 500;
+            color: #000000;
+            line-height: 64px;
+          }
+          .right-desc_content {
+            font-size: 27px;
+            font-weight: 400;
+            color: #6a6e75;
+            line-height: 40px;
+          }
+        }
+        .right-second {
+          box-shadow: 0 13px 27px 0 rgb(188 208 232 / 30%);
+          border-radius: 11px;
+          background: #ffffff;
+          position: relative;
+          .right {
+            box-shadow: none;
+            border-radius: 0;
+            background: transparent;
+            .right-desc {
+              flex: 1;
+              .right-desc_content {
+                span {
+                  float: right;
+                  margin-right: 43px;
+                }
+              }
+            }
+          }
+          &::after {
+            display: block;
+            content: ' ';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.6);
+            width: 1px;
+            height: 100%;
+            background: #d8dfed;
+          }
+        }
+      }
+    }
+  }
+}

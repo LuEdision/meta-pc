@@ -1,0 +1,73 @@
+.sys-message {
+  margin: 209px 568px 100px 571px;
+  .message-wait {
+    text-align: center;
+  }
+}
+.message-wait-main {
+  text-align: center;
+  img {
+    width: 267px;
+  }
+  h2 {
+    font-size: 27px;
+    font-family: Poppins-Medium, Poppins;
+    font-weight: 500;
+    color: #000000;
+    line-height: 40px;
+    margin: 32px 0 19px;
+  }
+  p {
+    font-size: 21px;
+    font-family: Poppins-Medium, Poppins;
+    font-weight: 500;
+    color: #89939f;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 53px;
+  }
+  .wait-down {
+    margin-bottom: 20px;
+  }
+}
+.message-wait-footer {
+  .btn {
+    width: 608px;
+    text-align: center;
+    margin: 0 auto;
+    .el-button {
+      width: 100%;
+      height: 64px;
+      font-size: 21px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 29px;
+    }
+  }
+}
+
+.cust-cd-timer {
+  font-size: 40px;
+  font-family: Poppins-Medium, Poppins;
+  font-weight: 600;
+  color: #438cff;
+  line-height: 32px;
+  gap: 5px;
+}
+
+.countdown-part-box {
+  display: flex;
+  align-items: center;
+
+  .part-item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .part-item-symbol {
+    margin: 0 5px;
+  }
+}
